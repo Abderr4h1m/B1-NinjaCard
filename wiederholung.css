@@ -1,0 +1,128 @@
+/* Base same as original but namespaced */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #121212;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  cursor: default;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to top, #2748a3, #167ac8);
+  box-shadow: 0 2px 10px rgba(38, 114, 221, 0.3);
+}
+
+.navbar img {
+  height: 70px;
+  width: auto;
+}
+
+.w-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #121212;
+}
+
+.w-teils-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.w-teil-btn,
+.w-buttons button {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #167ac8, #2748a3);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.w-teil-btn:hover,
+.w-buttons button:hover {
+  transform: translateY(-5px);
+}
+
+.w-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.w-card-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+  margin-bottom: 40px;
+}
+
+.w-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease, opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.w-card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #f5f5f5;
+  font-weight: 700;
+  box-shadow: 0 0 20px #f8993aa4;
+  background: linear-gradient(135deg, #f8993a, #f58033);
+}
+
+.w-card-back {
+  transform: rotateY(180deg);
+  color: #fff;
+}
+
+.w-card:hover {
+  transform: rotateY(180deg);
+}
+
+.w-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}

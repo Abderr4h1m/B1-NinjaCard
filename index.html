@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NinjaCards</title>
+    <title>NinjaCards - Landing</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -12,20 +12,52 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a href="ninjaCards.html" class="navbar">
+    <a href="index.html" class="navbar">
       <img src="assets/moutamakineLogo.png" alt="NinjaCards Logo" />
     </a>
 
     <div class="container" id="landing-page">
-      <h1>Wählen Sie einen Teil</h1>
-      <div class="teils-container">
-        <button class="teil-btn" onclick="startGame('teil1')">Teil 1</button>
-        <button class="teil-btn" onclick="startGame('teil2')">Teil 2</button>
-        <button class="teil-btn" onclick="startGame('teil3')">Teil 3</button>
+      <h1>Wählen Sie einen Modus</h1>
+      <div class="mode-container">
+        <button
+          class="mode-btn"
+          onclick="location.href='ninjaWiederholung.html'"
+        >
+          Wiederholung
+        </button>
+        <button class="mode-btn" onclick="location.href='ninjaCards.html'">
+          Test
+        </button>
       </div>
     </div>
 
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+    <style>
+      .mode-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .mode-btn {
+        padding: 25px 50px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        background: linear-gradient(135deg, #f2672d, #f8993a);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 15px rgba(248, 147, 163, 0.3);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .mode-btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 30px rgba(248, 147, 163, 0.3);
+      }
+    </style>
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NinjaCards - Ergebnis</title>
+    <title>NinjaCards</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -16,15 +16,12 @@
       <img src="assets/moutamakineLogo.png" alt="NinjaCards Logo" />
     </a>
 
-    <div class="container" id="result-page">
-      <img src="assets/ergbnisChangeColor.png" class="ergebnis" alt="" />
-      <div class="result-container">
-        <div class="score" id="score-text">Richtig: 0 | Falsch: 0</div>
-        <div class="percentage" id="percentage-text">Prozentsatz: 0%</div>
-        <div class="motivation" id="motivation-text">-</div>
-        <button class="retry-btn" onclick="restartGame()">
-          Nochmal spielen
-        </button>
+    <div class="container" id="landing-page">
+      <h1>Wählen Sie einen Teil</h1>
+      <div class="teils-container">
+        <button class="teil-btn" onclick="startGame('teil1')">Teil 1</button>
+        <button class="teil-btn" onclick="startGame('teil2')">Teil 2</button>
+        <button class="teil-btn" onclick="startGame('teil3')">Teil 3</button>
       </div>
     </div>
 

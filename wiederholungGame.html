@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiederholung - Spiel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/logoo.svg" />
+    <link rel="stylesheet" href="wiederholung.css" />
+  </head>
+  <body>
+    <a href="index.html" class="navbar">
+      <img src="assets/moutamakineLogo.png" alt="NinjaCards Logo" />
+    </a>
+
+    <div class="w-container" id="w-game-page">
+      <div class="w-game-container">
+        <div class="w-card-container">
+          <div class="w-card" id="w-current-card">
+            <div class="w-card-face w-card-front" id="w-card-front">
+              Loading...
+            </div>
+            <div class="w-card-face w-card-back" id="w-card-back">Answer</div>
+          </div>
+        </div>
+        <div class="w-buttons">
+          <button onclick="prevCard()">Back</button>
+          <button onclick="nextCard()">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="wiederholungScript.js"></script>
+  </body>
+</html>

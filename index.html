@@ -58,6 +58,21 @@
         transform: translateY(-5px);
         box-shadow: 0 0 30px rgba(248, 147, 163, 0.3);
       }
+      @media (max-width: 475px) {
+        .mode-container {
+          flex-direction: column;
+          gap: 20px;
+          margin-top: 30px;
+          align-items: center;
+        }
+
+        .mode-btn {
+          padding: 15px 30px;
+          font-size: 1.2rem;
+          width: 100%; /* optional if you want full-width buttons */
+          max-width: 250px; /* keep them reasonable */
+        }
+      }
     </style>
   </body>
 </html>

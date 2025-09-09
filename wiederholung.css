@@ -78,7 +78,7 @@ h1 {
 
 .w-card-container {
   position: relative;
-  width: 100%;
+  width: 400px;
   height: 300px;
   perspective: 1000px;
   margin-bottom: 40px;

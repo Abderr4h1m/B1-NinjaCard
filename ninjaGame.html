@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NinjaCards - Spiel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/logoo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="ninjaCards.html" class="navbar">
+      <img src="assets/moutamakineLogo.png" alt="NinjaCards Logo" />
+    </a>
+
+    <div class="container" id="game-page">
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <div class="game-container">
+        <div class="card-container">
+          <div class="card" id="current-card">
+            <div class="card-face card-front" id="card-front">Loading...</div>
+            <div class="card-face card-back" id="card-back">0</div>
+          </div>
+        </div>
+        <div class="input-container">
+          <input
+            type="number"
+            id="answer-input"
+            placeholder="Gib die Zahl ein..."
+          />
+          <button onclick="checkAnswer()">Enter</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

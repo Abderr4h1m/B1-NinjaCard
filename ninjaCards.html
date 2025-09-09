@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NinjaCards</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/logoo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="ninjaCards.html" class="navbar">
+      <img src="assets/moutamakineLogo.png" alt="NinjaCards Logo" />
+    </a>
+
+    <div class="container" id="landing-page">
+      <h1>Wählen Sie einen Teil</h1>
+      <div class="teils-container">
+        <button class="teil-btn" onclick="startGame('teil1')">Teil 1</button>
+        <button class="teil-btn" onclick="startGame('teil2')">Teil 2</button>
+        <button class="teil-btn" onclick="startGame('teil3')">Teil 3</button>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

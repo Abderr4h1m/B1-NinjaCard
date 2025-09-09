@@ -270,6 +270,36 @@ button:hover {
   box-shadow: 0 0 25px rgba(248, 147, 163, 0.171);
 }
 
+.ergebnis {
+  display: block;
+  margin: 0 auto 30px auto; /* Center horizontally with margin: 0 auto, and add 30px bottom margin */
+  max-width: 50%;
+  height: auto;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
+}
+
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 10px;
+  height: 15px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #167ac8, #2748a3);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
 @media (max-width: 768px) {
   .container {
     margin: 20px 10px;
@@ -301,32 +331,15 @@ button:hover {
   }
 }
 
-.ergebnis {
-  display: block;
-  margin: 0 auto 30px auto; /* Center horizontally with margin: 0 auto, and add 30px bottom margin */
-  max-width: 50%;
-  height: auto;
-  text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  cursor: default;
-}
-
-.progress-container {
-  width: 100%;
-  background: #ddd;
-  border-radius: 10px;
-  height: 15px;
-  margin: 40px auto;
-  overflow: hidden;
-}
-
-.progress-bar {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, #167ac8, #2748a3);
-  border-radius: 10px;
-  transition: width 0.3s ease;
+@media (max-width: 476px) {
+  .progress-container {
+    margin: 0px auto 20px auto;
+  }
+  .input-container {
+    display: flex;
+    gap: 15px;
+    margin-top: -10px;
+    width: 100%;
+    max-width: 400px;
+  }
 }

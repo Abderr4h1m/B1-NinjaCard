@@ -1,6 +1,8 @@
 const data = {
   teil1: [
-    { word: "50 Euro", number: 3 },
+    { word: "Stadt Friedichsberg", number: 235 },
+    { word: "Unwetterschäden", number: 14 },
+    { word: "Bierkonsum", number: 24 },
     { word: "Lufthansa", number: 23 },
     { word: "in den Alpen", number: 23 },
     { word: "Insel Bali", number: 45 },
@@ -14,14 +16,13 @@ const data = {
     { word: "Bundesländer", number: 125 },
     { word: "Manche Deutsch", number: 125 },
     { word: "Nicht sicher", number: 14 },
-    { word: "Unwetterschäden", number: 14 },
     { word: "Die Wahlbeteiligung", number: 13 },
     { word: "Frau Jürgs + Frau Funk", number: 345 },
-    { word: "Weniger Vögel", number: 345 },
+    { word: "50 Euro", number: 3 },
+
     { word: "Der Bau", number: 134 },
     { word: "Europäischen", number: 12 },
-    { word: "Bierkonsum", number: 24 },
-    { word: "Stadt Friedichsberg", number: 235 },
+    { word: "Weniger Vögel", number: 345 },
   ],
   teil2: [
     { word: "Meron Makeba", number: 4590 },

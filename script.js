@@ -22,11 +22,20 @@ function startGame(teil) {
   window.location.href = "ninjaGame.html";
 }
 
+// Shuffle helper
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 // Initialize game page
 function initGamePage() {
   if (window.location.pathname.includes("ninjaGame.html")) {
     currentTeil = localStorage.getItem("currentTeil") || "teil1";
-    cards = [...data[currentTeil]];
+    cards = shuffleArray([...data[currentTeil]]);
     currentIndex = 0;
     correctAnswers = 0;
     wrongAnswers = 0;

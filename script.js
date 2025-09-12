@@ -131,12 +131,13 @@ function checkAnswer() {
 // Initialize result page
 function initResultPage() {
   if (window.location.pathname.includes("ninjaresult.html")) {
-    correctAnswers = parseInt(localStorage.getItem("correctAnswers")) || 0;
-    wrongAnswers = parseInt(localStorage.getItem("wrongAnswers")) || 0;
-    currentTeil = localStorage.getItem("currentTeil") || "teil1";
+    let correctAnswers = parseInt(localStorage.getItem("correctAnswers")) || 0;
+    let wrongAnswers = parseInt(localStorage.getItem("wrongAnswers")) || 0;
+    let currentTeil = localStorage.getItem("currentTeil") || "teil1";
 
     const total = correctAnswers + wrongAnswers;
-    const percentage = Math.round((correctAnswers / total) * 100);
+    const percentage =
+      total > 0 ? Math.round((correctAnswers / total) * 100) : 0;
 
     document.getElementById(
       "score-text"
@@ -147,19 +148,24 @@ function initResultPage() {
 
     let motivation = "";
     let bgColor = "";
+
     if (percentage === 100) {
-      motivation = "wirklich ninja";
+      motivation = "Wahrer Ninja"; // Best score
       bgColor = "rgba(46, 204, 113, 0.8)";
+    } else if (percentage >= 80) {
+      motivation = "Starker Ninja"; // Very good
+      bgColor = "rgba(52, 152, 219, 0.8)";
     } else if (percentage >= 60) {
-      motivation = "gut aber übe weiter";
+      motivation = "Der Weg des Ninja hat begonnen"; // Training stage
       bgColor = "rgba(241, 196, 15, 0.8)";
     } else {
-      motivation = "du sollst wiederholen";
+      // Use the ninja image instead of text
+      motivation = `<img src="assets/ninjaText.png" alt="Ninjas geben nie auf" class="nichtauf"">`;
       bgColor = "rgba(231, 76, 60, 0.8)";
     }
 
     const motivationElement = document.getElementById("motivation-text");
-    motivationElement.textContent = motivation;
+    motivationElement.innerHTML = motivation; // allows <img>
     motivationElement.style.backgroundColor = bgColor;
   }
 }

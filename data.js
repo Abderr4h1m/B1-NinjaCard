@@ -19,7 +19,6 @@ const data = {
     { word: "Die Wahlbeteiligung", number: 13 },
     { word: "Frau Jürgs + Frau Funk", number: 345 },
     { word: "50 Euro", number: 3 },
-
     { word: "Der Bau", number: 134 },
     { word: "Europäischen", number: 12 },
     { word: "Weniger Vögel", number: 345 },
@@ -73,5 +72,6 @@ const data = {
     { word: "Trainin Auffahrten", number: 24 },
     { word: "Fandbüro", number: 125 },
     { word: "Ausgang 26", number: 145 },
+    { word: "Am Wochenanfang", number: 123 },
   ],
 };

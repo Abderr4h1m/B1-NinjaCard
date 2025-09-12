@@ -308,6 +308,11 @@ button:hover {
   transition: width 0.3s ease;
 }
 
+.nichtauf {
+  width: 500px;
+  margin: -20px 0 -50px -15px;
+}
+
 @media (max-width: 768px) {
   .container {
     margin: 20px 10px;
@@ -349,5 +354,9 @@ button:hover {
     margin-top: -10px;
     width: 100%;
     max-width: 400px;
+  }
+  .nichtauf {
+    width: 350px;
+    margin: -20px 0 -50px -20px;
   }
 }

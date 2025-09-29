@@ -10,12 +10,13 @@ const data = {
     { word: "In der Schule", number: 245 },
     { word: "Kinder", number: 245 },
     { word: "Urlaub", number: 125 },
-    { word: "Fremdsprache", number: 234 },
+    { word: "Fremdsprache", number: 245 },
     { word: "Handys", number: 14 },
   ],
   teil2: [
     { word: "UKI", number: 1 },
     { word: "Praktikum", number: 1 },
+    { word: "tuernkerr", number: 1 },
   ],
   teil3: [
     { word: "Georg und Claudia", number: 25 },

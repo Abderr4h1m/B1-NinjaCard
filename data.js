@@ -2,7 +2,7 @@ const data = {
   teil1: [
     { word: "Arbeitsplatz für ihren Vater", number: 234 },
     { word: "Einkäufe im Internet", number: 13 },
-    { word: "Computer", number: 24 },
+    { word: "Computer", number: 34 },
     { word: "Einzelkind", number: 245 },
     { word: "Sport als für Kultur", number: 125 },
     { word: "Bus zur Arbeit", number: 23 },

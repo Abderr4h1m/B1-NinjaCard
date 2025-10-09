@@ -5,7 +5,6 @@ let currentIndex = 0;
 let correctAnswers = 0;
 let wrongAnswers = 0;
 
-// Get URL parameters
 function getUrlParameter(name) {
   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
   var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
